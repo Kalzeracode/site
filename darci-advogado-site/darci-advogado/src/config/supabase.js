@@ -3,12 +3,12 @@ const SUPABASE_BUCKET = 'darci-site'
 
 export const supabaseImages = {
   logo: `${SUPABASE_URL}/storage/v1/object/public/${SUPABASE_BUCKET}/logo/logo-darci.jpg`,
-  darciProfile: `${SUPABASE_URL}/storage/v1/object/public/${SUPABASE_BUCKET}/profile/darci-profile.png`,
-  darciPhoto: `${SUPABASE_URL}/storage/v1/object/public/${SUPABASE_BUCKET}/profile/darci-photo.png`,
+  darciProfile: `https://sibdsejxpjgdlpdzcgej.supabase.co/storage/v1/object/public/darci-site/darci-site/profile/darci-profile`,
+  darciPhoto: `https://sibdsejxpjgdlpdzcgej.supabase.co/storage/v1/object/public/darci-site/darci-site/profile/darci-photo.png`,
   justiceBackground: `${SUPABASE_URL}/storage/v1/object/public/${SUPABASE_BUCKET}/backgrounds/background-justice.png`,
-  article1: `${SUPABASE_URL}/storage/v1/object/public/${SUPABASE_BUCKET}/articles/articles01.png`,
-  article2: `${SUPABASE_URL}/storage/v1/object/public/${SUPABASE_BUCKET}/articles/articles02.png`,
-  article3: `${SUPABASE_URL}/storage/v1/object/public/${SUPABASE_BUCKET}/articles/articles03.png`,
+  article1: `https://sibdsejxpjgdlpdzcgej.supabase.co/storage/v1/object/public/darci-site/darci-site/articles/articles01.png`,
+  article2: `https://sibdsejxpjgdlpdzcgej.supabase.co/storage/v1/object/public/darci-site/darci-site/articles/articles01.png`,
+  article3: `https://sibdsejxpjgdlpdzcgej.supabase.co/storage/v1/object/public/darci-site/darci-site/articles/articles01.png`,
 }
 
 export const getImageUrl = (imageName, fallback = '') => {
