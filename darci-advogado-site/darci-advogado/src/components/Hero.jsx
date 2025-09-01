@@ -22,23 +22,23 @@ const Hero = () => {
         }}
       ></div>
 
-      {/* Overlay com gradiente escuro */}
+      {/* Overlay escuro */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-gray-900/60"></div>
 
       {/* Conteúdo */}
       <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            DARCI ADVOGADO CRIMINALISTA
-            <span className="block text-2xl md:text-3xl text-blue-400 mt-3">
-              Defesa Jurídica Especializada com Confiança e Experiência
+            Dr. Darci Leite
+            <span className="block text-3xl md:text-4xl text-blue-400 mt-3">
+              Advogado Criminalista
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">
-            Atuação estratégica, atendimento imediato e defesa completa em casos
-            criminais. Compromisso com sigilo, dedicação integral e resultados
-            consistentes para proteger sua liberdade.
+            Defesa jurídica especializada em Direito Penal. Atendimento imediato,
+            sigilo absoluto e atuação estratégica para garantir proteção e
+            resultados consistentes em cada caso.
           </p>
 
           {/* Features */}
@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 text-xl font-semibold shadow-lg"
               onClick={() => scrollToSection('#contato')}
             >
               CONSULTAR AGORA
@@ -75,7 +75,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold"
+              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-5 text-xl font-semibold"
               onClick={() => scrollToSection('#escritorio')}
             >
               Saiba Mais
