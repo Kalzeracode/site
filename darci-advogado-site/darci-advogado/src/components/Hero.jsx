@@ -7,62 +7,74 @@ const Hero = () => {
   const scrollToSection = useScrollToSection()
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
-      
-      {/* Background image from Supabase */}
-      <div 
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center"
+    >
+      {/* Background image */}
+      <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('${getImageUrl('justiceBackground', 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')}')`
+          backgroundImage: `url('${getImageUrl(
+            'justiceBackground',
+            'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+          )}')`,
         }}
       ></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+
+      {/* Overlay com gradiente escuro */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-gray-900/60"></div>
+
+      {/* Conteúdo */}
+      <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
             DARCI ADVOGADO CRIMINALISTA
-            <span className="block text-3xl md:text-4xl text-blue-400 mt-2">
-              Defesa Jurídica Especializada
+            <span className="block text-2xl md:text-3xl text-blue-400 mt-3">
+              Defesa Jurídica Especializada com Confiança e Experiência
             </span>
           </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl">
-            Atuação estratégica e defesa jurídica completa para casos criminais com experiência e dedicação.
+
+          <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">
+            Atuação estratégica, atendimento imediato e defesa completa em casos
+            criminais. Compromisso com sigilo, dedicação integral e resultados
+            consistentes para proteger sua liberdade.
           </p>
 
           {/* Features */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-            <div className="text-center">
-              <Clock className="w-8 h-8 text-blue-400 mx-auto mb-2" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+            <div className="text-center md:text-left">
+              <Clock className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
               <p className="text-white font-medium">Atendimento Imediato</p>
             </div>
-            <div className="text-center">
-              <Shield className="w-8 h-8 text-blue-400 mx-auto mb-2" />
-              <p className="text-white font-medium">Especialista em Direito Penal</p>
+            <div className="text-center md:text-left">
+              <Shield className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
+              <p className="text-white font-medium">
+                Especialista em Direito Penal
+              </p>
             </div>
-            <div className="text-center">
-              <Lock className="w-8 h-8 text-blue-400 mx-auto mb-2" />
-              <p className="text-white font-medium">Sigilo e Discrição Absoluta</p>
+            <div className="text-center md:text-left">
+              <Lock className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
+              <p className="text-white font-medium">Sigilo Absoluto</p>
             </div>
-            <div className="text-center">
-              <Target className="w-8 h-8 text-blue-400 mx-auto mb-2" />
+            <div className="text-center md:text-left">
+              <Target className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
               <p className="text-white font-medium">Defesa Estratégica</p>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold"
+          {/* CTA */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Button
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg"
               onClick={() => scrollToSection('#contato')}
             >
-              CONSULTAR AGORA UM ADVOGADO CRIMINALISTA
+              CONSULTAR AGORA
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
+            <Button
+              size="lg"
+              variant="outline"
               className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold"
               onClick={() => scrollToSection('#escritorio')}
             >
@@ -76,4 +88,3 @@ const Hero = () => {
 }
 
 export default Hero
-
