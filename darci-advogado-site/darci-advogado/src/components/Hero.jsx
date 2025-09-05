@@ -29,32 +29,24 @@ const Hero = () => {
         <div className="max-w-4xl">
           <h1 className="font-['Playfair_Display'] text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
             Está sendo investigado ou preso?
-            <span className="block text-3xl md:text-4xl text-blue-400 mt-3 font-normal italic">
-              Precisa de defesa AGORA.
+            <span className="block text-3xl md:text-4xl text-[#D4AF37] mt-3 italic">
+              Defesa criminal com atendimento imediato.
             </span>
           </h1>
 
           <p className="font-['Inter'] text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">
-            Defesa criminal imediata com sigilo absoluto e estratégia
-            comprovada para proteger sua liberdade e garantir seus direitos.
+            Atuação ética e estratégica em todas as fases do processo penal.
+            Atendimento ágil, sigiloso e comprometido com os direitos do cliente.
           </p>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start">
             <Button
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 text-xl font-semibold shadow-lg"
               onClick={() => scrollToSection('#contato')}
             >
               CONSULTAR AGORA
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-5 text-xl font-semibold"
-              onClick={() => scrollToSection('#escritorio')}
-            >
-              Saiba Mais
             </Button>
           </div>
         </div>
