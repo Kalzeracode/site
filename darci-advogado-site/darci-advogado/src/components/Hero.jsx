@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { Shield, Clock, Lock, Target } from 'lucide-react'
 import { useScrollToSection } from '../hooks/useScrollToSection'
 import { getImageUrl } from '../config/supabase'
 
@@ -23,45 +22,22 @@ const Hero = () => {
       ></div>
 
       {/* Overlay escuro */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-gray-900/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/75 to-gray-900/70"></div>
 
       {/* Conteúdo */}
       <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            Dr. Darci Leite
-            <span className="block text-3xl md:text-4xl text-blue-400 mt-3">
-              Advogado Criminalista
+          <h1 className="font-['Playfair_Display'] text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+            Está sendo investigado ou preso?
+            <span className="block text-3xl md:text-4xl text-blue-400 mt-3 font-normal italic">
+              Precisa de defesa AGORA.
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">
-            Defesa jurídica especializada em Direito Penal. Atendimento imediato,
-            sigilo absoluto e atuação estratégica para garantir proteção e
-            resultados consistentes em cada caso.
+          <p className="font-['Inter'] text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">
+            Defesa criminal imediata com sigilo absoluto e estratégia
+            comprovada para proteger sua liberdade e garantir seus direitos.
           </p>
-
-          {/* Features */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
-            <div className="text-center md:text-left">
-              <Clock className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
-              <p className="text-white font-medium">Atendimento Imediato</p>
-            </div>
-            <div className="text-center md:text-left">
-              <Shield className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
-              <p className="text-white font-medium">
-                Especialista em Direito Penal
-              </p>
-            </div>
-            <div className="text-center md:text-left">
-              <Lock className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
-              <p className="text-white font-medium">Sigilo Absoluto</p>
-            </div>
-            <div className="text-center md:text-left">
-              <Target className="w-10 h-10 text-blue-400 mx-auto md:mx-0 mb-3" />
-              <p className="text-white font-medium">Defesa Estratégica</p>
-            </div>
-          </div>
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
